@@ -41,9 +41,6 @@ let convertedYear = (inputYear - 4) % 12;
 //   case 11:
 //     console.log(`The person born in ${inputYear} is a Pig`);
 //     break;
-//    default:
-//    console.log('Please enter number between 0 and 11')
-//    break;
 // }
 // //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -75,9 +72,7 @@ if (convertedYear === 0) {
   console.log(`The person born in ${inputYear} is a Dog`);
 } else if (convertedYear === 11) {
   console.log(`The person born in ${inputYear} is a Pig`);
-} else {
-  console.log('Please enter number between 0 and 11')}
-
+}
 // //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // If we put the signs into an array  we can have the short code below
