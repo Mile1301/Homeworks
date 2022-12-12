@@ -73,7 +73,6 @@ if (convertedYear === 0) {
 } else if (convertedYear === 11) {
   console.log(`The person born in ${inputYear} is a Pig`);
 }
-
 // //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // If we put the signs into an array  we can have the short code below
