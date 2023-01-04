@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Hangman</title>
+  </head>
+  <body>
+    <h1>HANGMAN</h1>
+    <h2>VANNILA JAVASCRIPT HANGMAN GAME</h2>
+    <h3>
+      Use the alphabet below to guess the word, or click hint to get a clue.
+    </h3>
+    <section class="grid">
+      <article class="letter" id="a">a</article>
+      <article class="letter" id="b">b</article>
+      <article class="letter" id="c">c</article>
+      <article class="letter" id="d">d</article>
+      <article class="letter" id="e">e</article>
+      <article class="letter" id="f">f</article>
+      <article class="letter" id="g">g</article>
+      <article class="letter" id="h">h</article>
+      <article class="letter" id="i">i</article>
+      <article class="letter" id="j">j</article>
+      <article class="letter" id="k">k</article>
+      <article class="letter" id="l">l</article>
+      <article class="letter" id="m">m</article>
+      <article class="letter" id="n">n</article>
+      <article class="letter" id="o">o</article>
+      <article class="letter" id="p">p</article>
+      <article class="letter" id="q">q</article>
+      <article class="letter" id="r">r</article>
+      <article class="letter" id="s">s</article>
+      <article class="letter" id="t">t</article>
+      <article class="letter" id="u">u</article>
+      <article class="letter" id="v">v</article>
+      <article class="letter" id="w">w</article>
+      <article class="letter" id="x">x</article>
+      <article class="letter" id="y">y</article>
+      <article class="letter" id="z">z</article>
+    </section>
+    <p>The chosen category is <span class="category">Films</span></p>
+    <p class="rendered"></p>
+    <p>You have <span class="lives">6</span> lives</p>
+    <p>Clue - <span class="clue"></span></p>
+    <section class="scaffold">
+      <article></article>
+      <article id="scaffold_hanger">&#9516;</article>
+      <article id="scaffold_horizontalBar">&#9472;&#9472;</article>
+      <article id="scaffold_upperBase">&#9516;</article>
+      <article></article>
+      <article id="scaffold_part1"></article>
+      <article></article>
+      <article id="scaffold_verticalBar1">&#124;</article>
+      <article id="scaffold_part4"></article>
+      <article id="scaffold_part2"></article>
+      <article id="scaffold_part3"></article>
+      <article id="scaffold_verticalBar1">&#124;</article>
+      <article id="scaffold_part6"></article>
+      <article></article>
+      <article id="scaffold_part5"></article>
+      <article id="scaffold_base">&#9527;</article>
+    </section>
+    <div class="btn-container">
+      <button class="btn hint">Hint</button>
+      <button class="btn play">Play again</button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
