@@ -1,0 +1,91 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+/* - Make the header a flexbox container */
+header {
+  display: flex;
+  /* - Set the flex direction in the header so that the header-brand is on the right side */
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  border: 1px solid black;
+  align-items: center;
+}
+/* - Make the navigation horizontal with flexbox */
+.header-brand {
+  flex: 0.5;
+}
+.header-nav {
+  flex: 3;
+  display: flex;
+  justify-content: flex-start;
+  /* align-items: flex-end; */
+}
+.header-nav ul {
+  flex: 0.5;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+aside ul li {
+  color: white;
+}
+/* - Use flexbox to position the <aside> on the right side, and the .hero-page section on the left */
+main {
+  display: flex;
+  flex-direction: row-reverse;
+}
+aside {
+  background: center/cover
+    url(https://images.unsplash.com/photo-1589272013798-88b8be9c23c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1780&q=80);
+}
+
+/* - Add flexbox on the .hero-page section so the articles position next to each other */
+.hero-page {
+  display: flex;
+  position: relative;
+  background: center/cover
+    url(https://images.unsplash.com/photo-1669887961917-b7ee42b3ccc5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80);
+}
+footer {
+  display: none;
+}
+/* - The header nav should not be seen on a mobile device */
+@media screen and (max-width: 600px) {
+  .header-nav {
+    display: none;
+  }
+
+  /* - On mobile device the articles in the hero section should flow vertically */
+
+  .hero-page {
+    flex-direction: column;
+  }
+  p {
+    opacity: 0.5;
+  }
+  p:hover {
+    opacity: 1;
+  }
+  /* - The footer should only be visible on mobile devices */
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+  footer ul {
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+}
+/* - Bonus: Add a background-image on the .hero-page section (hint: Use something from pexels or unsplash) */
+/* (Do a bit of research to see how exactly this works, it can be tricky :D) */
+/* - Bonus 2: Add other styles to the homework */

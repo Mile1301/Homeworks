@@ -1,0 +1,51 @@
+[
+  {
+    "id": "304b6f41-fc4a-4806-b8a9-37e421ba3308",
+    "firstName": "Mile",
+    "lastName": "Todorovski",
+    "email": "mile@hotmail.com",
+    "age": 39
+  },
+  {
+    "id": "1bb855ed-2c80-4fdc-9d09-03c1aa2b9c64",
+    "firstName": "Borche",
+    "lastName": "Borisovski",
+    "email": "borche@hotmail.com",
+    "age": 30
+  },
+  {
+    "id": "5285b362-fc13-4dd6-8ade-bdd3a175e2b8",
+    "firstName": "Petko",
+    "lastName": "Petkovski",
+    "email": "petko@hotmail.com",
+    "age": 35
+  },
+  {
+    "id": "e6c3ac21-425e-4275-a561-d5da76aff919",
+    "firstName": "Ace",
+    "lastName": "Acevski-Acevski",
+    "email": "ace@hotmail.com",
+    "age": 25
+  },
+  {
+    "id": "b80a3995-89f7-4f51-9c17-78e23e8ced9d",
+    "firstName": "Aleksandra",
+    "lastName": "Aleksandrovska",
+    "email": "aleksandra@hotmail.com",
+    "age": 20
+  },
+  {
+    "id": "8735f8ca-fec9-4eea-b2ea-b2ffe4c5b50d",
+    "firstName": "Marija",
+    "lastName": "Marijevska",
+    "email": "marija@hotmail.com",
+    "age": 50
+  },
+  {
+    "id": "1ed5d585-d4a8-41c6-b7a2-af7306e942ba",
+    "firstName": "Eleonora",
+    "lastName": "Elonorovska",
+    "email": "eleonora@hotmail.com",
+    "age": 55
+  }
+]

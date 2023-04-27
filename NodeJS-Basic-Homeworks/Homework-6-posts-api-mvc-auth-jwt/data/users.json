@@ -1,0 +1,29 @@
+[
+  {
+    "id": "8ae274d4-d8c1-4a2b-922f-f96c7be51395",
+    "firstName": "Mile",
+    "lastName": "Todorovski",
+    "email": "mile@hotmail.com",
+    "role": "bussiness",
+    "password": "$2a$08$yyWTpkE/ynZsC5mzN8ddU.QHJebE2jbHwIku8W5p4UaKPGNkvtC0G",
+    "refreshToken": null
+  },
+  {
+    "id": "e80d0fd3-eab3-4407-8f44-a13033a528d9",
+    "firstName": "Borche",
+    "lastName": "Borisovski",
+    "email": "borche@hotmail.com",
+    "role": "user",
+    "password": "$2a$08$QYJaDFdLa.cz7Y6W90upPeq7S9toLREuO1v1kpT/HZdK396Qnwzci",
+    "refreshToken": null
+  },
+  {
+    "id": "29a7bf5b-b2a3-4191-9b3a-8c310c436bd6",
+    "firstName": "First",
+    "lastName": "Firstsky",
+    "email": "first@hotmail.com",
+    "role": "admin",
+    "password": "$2a$08$eUm4cIyH3QgXwv4M7tiQ3e11u0JEl5cm/ZmGFuLqdNut8WZqhc9uS",
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIyOWE3YmY1Yi1iMmEzLTQxOTEtOWIzYS04YzMxMGM0MzZiZDYiLCJpYXQiOjE2ODAyNTk2MjEsImV4cCI6MTY4MDg2NDQyMX0.cQkjTjJWs4Mf37Xctq7zZtcHUbauXIQtSdW3cS7Pq7U"
+  }
+]

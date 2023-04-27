@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dado Tea Lunch Special</title>
+</head>
+
+<body>
+    <form action="./order.html" method="">
+        <fieldset>
+            <h1>Dado Tea Lunch Special</h1>
+            <p>
+                11am-3pm
+                <br>
+                $9,95 plus tax
+                <br>
+                <br>
+                Includes snack, sandwich and drink
+            </p>
+            <fieldset>
+                <legend>Other Information</legend>
+                <label for="customerName"><b>Name</b></label>
+                <input type="text" id="customerName" name="order" required placeholder="type your name here"
+                    minlength="5" maxlength="10" autocomplete="off">
+                <br>
+                <input type="radio" name="place" id="here" value="here">
+                <label for="here">Here</label>
+                <br>
+                <input type="radio" name="place" id="toGo" value="toGo">
+                <label for="toGo">To Go</label>
+            </fieldset>
+            <fieldset>
+                <legend>Sandwiches</legend>
+                <label for="monday"><b>Monday</b></label>
+                <div id="monday">
+                    <input type="radio" name="sandwich" id="tomatoMozzarella" value="tomatoMozzarella">
+                    <label for="tomatoMozzarella">Tomato Mozzarella</label>
+                    <br>
+                    <input type="radio" name="sandwich" id="chickenSalad" value="chickenSalad">
+                    <label for="chickenSalad">Chicken Salad</label>
+                </div>
+                <label for="tuesday"><b>Tuesday</b></legend></label>
+                <div id="tuesday">
+                    <input type="radio" name="sandwich" id="greekSaladWrap" value="greekSaladWrap">
+                    <label for="greekSaladWrap">Greek Salad Wrap</label>
+                    <br>
+                    <input type="radio" name="sandwich" id="totoWrap" value="totoWrap">
+                    <label for="totoWrap">Toto Wrap</label>
+                </div>
+                <label for="wednesday"><b>Wednesday</b></label>
+                <div id="wednesday">
+                    <input type="radio" name="sandwich" id="redPepperHummus" value="redPepperHummus">
+                    <label for="redPepperHummus">Red Pepper Hummus</label>
+                    <br>
+                    <input type="radio" name="sandwich" id="roastedTurkey" value="roastedTurkey">
+                    <label for="roastedTurkey">Roasted Turkey</label>
+                </div>
+                <label for="thursday"><b>Thursday</b></label>
+                <div id="thursday">
+                    <input type="radio" name="sandwich" id="carrotGingerHummusWrap" value="carrotGingerHummusWrap">
+                    <label for="carrotGingerHummusWrap">Carrot Ginger Hummus Wrap</label>
+                    <br>
+                    <input type="radio" name="sandwich" id="eggSalad" value="eggSalad">
+                    <label for="eggSalad">Egg Salad</label>
+                </div>
+                <label for="friday"><b>Friday</b></label>
+                <div id="friday">
+                    <input type="radio" name="sandwich" id="dadoWrap" value="dadoWrap">
+                    <label for="dadoWrap">Dado Wrap</label>
+                    <br>
+                    <input type="radio" name="sandwich" id="tunaSalad" value="tunaSalad">
+                    <label for="tunaSalad">Tuna Salad</label>
+                </div>
+                <hr>
+                <input type="checkbox" name="optBread" id="glutenFreeBread" value="glutenFreeBread">
+                <label for="glutenFreeBread">Gluten Free Bread (75&cent; extra)</label>
+                <p><small>Because of my limited knowledge and the fact that i don`t know any javascript yet, please have
+                        in mind that you should know what day is day when you are ordering. For example, if today is
+                        Tuesday and you click some sandwich from Thursday, I wouldn`t know which one to make. Sorry for
+                        the inconvinice and cross your fingers for my future javascript knowledge :)))</small></p>
+            </fieldset>
+            <fieldset>
+                <legend>Snack</legend>
+                <legend><b>Snacks</b></legend>
+                <input type="radio" name="snack" id="apple" value="apple">
+                <label for="apple">Apple</label>
+                <br>
+                <input type="radio" name="snack" id="banana" value="banana">
+                <label for="banana">Banana</label>
+                <br>
+                <input type="radio" name="snack" id="potatoChips" value="potatoChips">
+                <label for="potatoChips">Potato Chips</label>
+                <br>
+                <input type="radio" name="snack" id="noSnack" value="noSnack">
+                <label for="noSnack">I don`t want a snack - please donate it</label>
+            </fieldset>
+            <fieldset>
+                <legend>Drink</legend>
+                <label for="drink"><b>Drinks</b></label>
+                <select name="drink" id="drink">
+                    <option value="coffee">Coffee</option>
+                    <option value="icedCoffee">Iced Coffee</option>
+                    <option value="organicPeppermint">Organic Peppermint</option>
+                    <option value="hotSenchaGreenTea">Hot Sencha Green Tea</option>
+                    <option value="coldSenchaGreenTea">Cold Sencha Green Tea</option>
+                    <option value="hotKeemunBlackTea" selected>Hot Black Tea - Keemun</option>
+                    <option value="coldKeemunBlackTea">Cold Black Tea - Keemun</option>
+                </select>
+                <hr>
+                <!-- Because i don`t know JS yet, the checkbox for the Bubble Tea should be enabled only if a drink 
+                    with a class of tea is selected -->
+                <input type="checkbox" name="optTea" id="bubbleTea" value="bubbleTea">
+                <label for="bubbleTea">$1.50 extra for any regular size Bubble Tea</label>
+                <br>
+                <input type="checkbox" name="optDrink" id="largeDrink" value="largeDrink">
+                <label for="largeDrink">75&cent; for Large Drink</label>
+            </fieldset>
+            <input type="submit" value="Place Order">
+        </fieldset>
+    </form>
+</body>
+
+</html>

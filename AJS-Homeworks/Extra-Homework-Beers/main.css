@@ -1,0 +1,31 @@
+img {
+  max-height: 18rem;
+}
+.singleImageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titleForHeight {
+  height: 3rem;
+}
+.textForHeight {
+  height: 4.7rem;
+}
+
+.mainCard {
+  width: 18rem;
+}
+
+.pageSize:hover,
+.filterStuff:hover {
+  cursor: pointer;
+  padding: 0;
+}
+.render {
+  margin: -2;
+}
+
+.displayNone {
+  display: none;
+}

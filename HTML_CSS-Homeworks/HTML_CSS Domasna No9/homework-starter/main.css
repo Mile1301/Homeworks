@@ -1,0 +1,127 @@
+/* - Import two fonts from google fonts. One should be a display font, one should be for the text. */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Rubik+Glitch&display=swap');
+
+/* - Define 4 colors (--black, --white, --primary, --accent) in variables */
+:root {
+    --color-black: #000;
+    --color-white: #fff;
+    --color-primary: #f15bb5;
+    --color-accent: #fee440;
+    /* https://coolors.co/palettes/trending */
+
+    /* - Define the two font-families in variables (--font-display, --font-text) */
+    --font-display: 'Rubik Glitch', cursive;
+    --font-text: 'Oswald', sans-serif;
+}
+
+/* - Use font-display for all headings. Use font-text for everything else */
+html {
+    /* font-size: 62.5%; */
+    font-family: var(--font-text);
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-display);
+}
+
+/* - Define separate font-sizes for all headings h1 to h4 (h1 should be larger than h2, etc) */
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+/* - Add font color to the nav links for all states. (regular a, :hover, :active) (use the variables) */
+nav a {
+    color: var(--color-primary);
+}
+
+nav a:visited {
+    color: var(--color-accent);
+}
+
+nav a:hover {
+    color: var(--color-black);
+}
+
+nav a:active {
+    color: var(--color-white);
+}
+
+/* - Remove the list style from the navigation ul list */
+ul {
+    list-style: none;
+}
+
+/* - All elements with the class .card should have the primary color as background-color, and accent color as font color */
+.card {
+    background-color: var(--color-primary);
+    color: var(--color-accent);
+}
+
+/* - All paragraphs in the .primary-articles should have italic text (do NOT edit the HTML to achieve this :D ) */
+.primary-card p {
+    font-style: italic;
+}
+
+/* - All paragraphs in the .secondary-articles should have a font-weight of 700 (same here, do not edit the HTML) */
+.secondary-card p {
+    font-weight: 700;
+}
+
+/* - Bonus: Add styling to the contact section and form */
+.contact {
+    border: 1px solid red;
+    border-radius: 1rem;
+    text-align: center;
+    background: no-repeat center/100% url(https://images.unsplash.com/photo-1559926431-73aebfacd993?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80);
+}
+
+label {
+    display: block;
+    text-shadow: 1px 1px 2px var(--color-accent);
+}
+
+.form-group {
+    margin: 0.5rem 0.5rem;
+}
+
+textarea {
+    resize: none;
+}
+
+button[type="submit"] {
+    transition: box-shadow 0.5s linear 0.2s, transform 0.2s linear 0.1s;
+    margin-bottom: 0.5rem;
+    background-color: var(--color-primary);
+    font-weight: 700;
+    border-radius: 1rem;
+    font-size: 1rem;
+    padding: 0.5rem 2rem;
+    text-shadow: 1px 1px 2px var(--color-accent);
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+    box-shadow: 1px 1px 1px 0.5px var(--color-accent);
+    transform: rotate(360deg) scale(2) translateY(-0.2rem) translateX(1rem);
+    cursor: progress;
+    color: var(--color-white);
+}
+
+::selection {
+    color: rgb(255, 0, 102);
+    background-color: springgreen;
+}
+
+/* Note: Keep the homework task comment above when sending the homework. It helps with checking your homework. You can even use the comments
+to specify where a solution for a task is located in the document. You can delete this note. :D
+*/

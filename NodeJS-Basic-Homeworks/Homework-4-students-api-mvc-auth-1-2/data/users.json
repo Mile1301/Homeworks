@@ -1,0 +1,30 @@
+[
+  {
+    "id": "6d37faf1-c162-4e67-8fa5-73fb498e1923",
+    "firstName": "Charlie",
+    "lastName": "Harper",
+    "email": "charlie@test.com",
+    "password": "111"
+  },
+  {
+    "id": "55a3e6e3-43bc-4580-9ed3-22e83035a852",
+    "firstName": "Alan",
+    "lastName": "Harper",
+    "email": "alan@test.com",
+    "password": "$2a$08$LurGARXJR0f97Zw5OCniie7CHyGEc7fk3BIuyj9SkZK3Qai2pUKSy"
+  },
+  {
+    "id": "25395185-b850-4e32-a505-a36922df0b86",
+    "firstName": "Herb",
+    "lastName": "Melnick",
+    "email": "herb@test.com",
+    "password": "$2a$08$nvk9HQk5N/m5X1wlg9MYJ.lMTBgjQPw0MwiAAeYuPrL9/68ruUNV6"
+  },
+  {
+    "id": "76b19cc6-eac6-4c69-8cb9-a5ec1a181eab",
+    "firstName": "Walden",
+    "lastName": "Schmidt",
+    "email": "walden@test.com",
+    "password": "$2a$08$P5mWdlVkJBjqLJLliqImjuqcbI6tsh5ynondT.cZae27lZIrBSTu2"
+  }
+]

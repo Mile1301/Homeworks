@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+p,
+div {
+  font-size: 2rem;
+  width: 50%;
+}
+
+:root {
+  --color-black: #2d3436;
+  --color-white: #f5f5f5;
+  --color-primary: #6c5ce7;
+  --color-accent: #fdcb6e;
+  --color-danger: #d63031;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  outline: none;
+  border: none;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+/* What the code below does is, it selects the first div that is a direct child of the .c1 (or .c2) container. Very useful if you don't want to bother
+with thinking about class names. */
+
+.c1>div:nth-child(1) {
+  background-color: red;
+}
+
+.c2>div:nth-child(2) {
+  background-color: yellow;
+}
+
+.header-brand {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 1rem;
+  width: 100%;
+}
+
+.header-nav>ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+li {
+  font-size: 2rem;
+}
+
+
+.container {
+  /* - Add a padding to all container divs */
+  padding: 1rem;
+  /* - Add margins between all container divs */
+  margin-top: 1rem;
+}
+
+/* - Add margin top/bottom to the button  (use shorthand) */
+.btn {
+  margin: 1rem 0;
+}
+
+/* - Add (different) borders to all containers. (note: all containers have two classes, use that) */
+/*  */
+.container.c1 {
+  border: 1px solid black;
+}
+
+/*  */
+.container.c2 {
+  border: 1px solid red;
+}
+
+/*  */
+.container.c3 {
+  border: 10px solid yellow;
+}
+
+/*  */
+.container.c4 {
+  border: 1px solid blue;
+}
+
+
+/* - Use relative positioning to displace the 3 <div> in the c1 container. Check out the :nth-child() selector, I recommend using it
+but it's okay if you don't want to bother. */
+
+.c1 div:nth-child(1) {
+  position: relative;
+  top: 100px;
+  left: 300px;
+  border: 1px solid blue;
+}
+
+.c1 div:nth-child(2) {
+  position: relative;
+  top: 200px;
+  border: 1px solid blue;
+  right: 100px;
+}
+
+.c1 div:nth-child(3) {
+  position: relative;
+  top: 100px;
+  left: 300px;
+  border: 1px solid blue;
+}
+
+/* - Use absolute positioning to displace the 3 <div> in the c2 container, relative to the ENTIRE document */
+html {
+  position: relative;
+}
+
+.c2 div:nth-child(1) {
+  position: absolute;
+  top: 600px;
+  left: 300px;
+  border: 10px solid green;
+}
+
+.c2 div:nth-child(2) {
+  position: absolute;
+  top: 800px;
+  left: 300px;
+  border: 10px solid green;
+}
+
+.c2 div:nth-child(3) {
+  position: absolute;
+  top: 1000px;
+  left: 300px;
+  border: 10px solid green;
+}
+
+/* - Use absolute positioning to to displace the 2 <div> in the c3 container, relative to the PARENT div */
+.c3 {
+  position: relative;
+  /*   */
+  top: 2800px;
+  min-height: 80vh;
+  /* for better understanding */
+}
+
+.c3 div:nth-child(1) {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: 10px solid magenta;
+}
+
+.c3 div:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 10px solid magenta;
+}
+
+/* - Use sticky positioning on the button */
+.btn {
+  position: sticky;
+  top: 100px;
+}
+
+/* stays sticky from its position when scrolled over until the end of the parent container (but until the last element in the normal flow
+disregarding the additionaly differently re-positioned elements - it won`t stay sticky over them. For example - if the 3rd element in the flow is
+somehow re-positioned and put after the 4th element*/
+
+/* - Make the header sit fixed at the top when scrolling */
+.header {
+  position: fixed;
+  top: 0;
+}

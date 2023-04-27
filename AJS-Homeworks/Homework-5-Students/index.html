@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Students Homework</title>
+  </head>
+  <body>
+    <h1>Higher order functions</h1>
+    <select name="filter" id="filterSelect">
+      <option value="" disabled selected>Please select one option</option>
+      <option value="avgGradeGT3">Students with average grade > 3</option>
+      <option value="femaleAvgGradeHT5">Female students with average grade of 5</option>
+      <option value="maleStudentCityOver18">Male students aged over 18 who live in Skopje</option>
+      <option value="femaleOver24AvgGrades">Female students over the age of 24</option>
+      <option value="maleNameStartBAvgGradeMT2">Male students with names starting with B with average grade > 2</option>
+    </select>
+    <table class="renderResults">
+      <thead>
+        <tr>
+          <th class="idHeader">Student ID</th>
+          <th>Student First Name</th>
+          <th>Student Last Name</th>
+          <th>Gender</th>
+          <th>Age</th>
+          <th>City</th>
+          <th class="avgGradeHeader">Average Grade</th>
+        </tr>
+      </thead>
+      <tbody class="renderStudentsTableBody"></tbody>
+    </table>
+    <div class="randomResults"></div>
+    <script src="app.js"></script>
+  </body>
+</html>

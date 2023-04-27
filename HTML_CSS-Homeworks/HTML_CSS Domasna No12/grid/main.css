@@ -1,0 +1,91 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  background-color: #ffeaa7;
+}
+.grid {
+  /* height: 100vh; */
+  padding: 3rem;
+  display: grid;
+  gap: 1rem;
+  grid-template: repeat(5, 1fr) / repeat(5, 1fr);
+  /* grid-template-areas: repeat(5, 1fr) / repeat(5, 1fr); */
+}
+.card {
+  border-radius: 1rem;
+  font-size: 1.4rem;
+  padding: 1rem;
+}
+.grid article:nth-child(1),
+.grid article:nth-child(2) {
+  font-weight: 400;
+}
+.grid article:nth-of-type(3),
+.grid article:nth-of-type(4),
+.grid article:nth-of-type(5),
+.grid article:nth-of-type(6) {
+  font-weight: 500;
+}
+.grid__card1 {
+  background-color: #74b9ff;
+  color: #e9f2f7;
+  /* grid-area: 1/1/1/4; */
+  grid-row: 1 / 1;
+  grid-column: 1 / 4;
+}
+.grid__card2 {
+  background-color: #a29bfe;
+  color: #e9f2f7;
+  /* grid-area: 2/2/2/6; */
+  grid-row-start: 2;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 6;
+}
+.grid__card3 {
+  background-color: #81ecec;
+  color: #4f4141;
+  grid-area: 4/1/6/1;
+}
+.grid__card4 {
+  background-color: #55efc4;
+  color: #4f4141;
+  grid-area: 3/2/6/3;
+}
+.grid__card5 {
+  background-color: #fab1a0;
+  color: #4f4141;
+  /* grid-area: 3/3/6/5; */
+  grid-row: 3 / span 3;
+  grid-column: 3 / span 2;
+}
+.grid__card6 {
+  background-color: #f5f5f5;
+  color: #4f4141;
+  /* grid-area: 4/5/6/6; */
+  grid-row-start: 4;
+  grid-row-end: 6;
+  grid-column-start: 5;
+  grid-column-end: 6;
+}
+
+@media screen and (max-width: 600px) {
+  .grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .grid__card6 {
+    order: -1;
+    transition: 2s linear 2s;
+  }
+}

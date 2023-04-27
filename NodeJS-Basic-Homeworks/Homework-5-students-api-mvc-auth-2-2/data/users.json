@@ -1,0 +1,42 @@
+[
+  {
+    "id": "934af181-e425-4876-9fdd-b64b7d390f10",
+    "firstName": "Homer",
+    "lastName": "Simpson",
+    "email": "homer@gmail.com",
+    "role": "user",
+    "password": "$2a$08$d5tX63k6IfnapRqfAJlol.HKFWiWFMVNoRg6/W8FvwVZwJ7mXbSNO"
+  },
+  {
+    "id": "0d2dc0ec-e42d-4102-a70f-c1c602ecbbd8",
+    "firstName": "Bart",
+    "lastName": "Simpson",
+    "email": "bart@gmail.com",
+    "role": "user",
+    "password": "$2a$08$KppLnMNINrwcXY2XRZzGCuh0gSy8KJrK5DEJ6RWcBJ5ERH.wcX6Aq"
+  },
+  {
+    "id": "765b86b9-366c-4857-bb1f-e8135c6ea675",
+    "firstName": "Marge",
+    "lastName": "Simpson",
+    "role": "admin",
+    "email": "marge@gmail.com",
+    "password": "$2a$08$Hs7FwXpkJDqpJ4yleaB2yuS9G8VTl0HZ4PlmrnHJJc8ySJDIKx3Ai"
+  },
+  {
+    "id": "fb162ff0-4823-4005-9086-72d56689c61f",
+    "firstName": "Maggie",
+    "lastName": "Simpson",
+    "email": "maggie@gmail.com",
+    "role": "business",
+    "password": "$2a$08$SBwgC2vAaJYhJWYD2Myp2OBg6whNt97uDEKc9Ta62SVde1EcNlIp6"
+  },
+  {
+    "id": "9d8285eb-3e12-43a8-b643-f09c9ed9d8bf",
+    "firstName": "Lisa",
+    "lastName": "Simpson",
+    "email": "lisa@gmail.com",
+    "role": "business",
+    "password": "$2a$08$WINHYpeYoL6AuvN/ASFiUOQv1hgUSp7v1G5EgGjgfOp2lihZBsHZO"
+  }
+]

@@ -1,0 +1,58 @@
+/* 1. Import two fonts from google fonts. One should be a display font, the other should be something readable
+    like a sans-serif font. */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Rubik+Microbe&display=swap');
+
+/* 2. All headings (h1-h6) should use the display font. */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Rubik Microbe', cursive;
+}
+
+html {
+    /* 3. Everything else should use the other, readable font. */
+    font-family: 'Roboto', sans-serif;
+    /* 4. Set the main font-size of the html (root) element so it's 10px */
+    font-size: 62.5%;
+    /* 5. Use rem to define the font-size of all headings (h1-h6), and the font-size of paragraphs. */
+    font-size: 1.6rem;
+}
+
+/* 6. Add a background color the word Blog in the header brand */
+div span {
+    background-color: rgba(255, 0, 0, 0.545);
+}
+
+/* 7. Add a background color to all paragraphs that have the class .card-content */
+p.card-content {
+    background-color: green;
+}
+
+/* 8. Add a color to all paragraphs, regardless of the class */
+p {
+    color: purple;
+}
+
+/* 9. Add specific styling only to sections of with the class .top-card */
+article.top-card {
+    font-weight: 700;
+    font-style: italic;
+    border: 0.2rem solid red;
+    color: black;
+}
+
+/* 10. Add a background-color and font-size to the <span> within the footer */
+footer span {
+    background-color: palegreen;
+    font-size: 0.5rem;
+}
+
+/* 11. Add other custom styles */
+* {
+    border: 0.2rem solid palegoldenrod;
+    border-radius: 0.5rem;
+    color: brown;
+}
