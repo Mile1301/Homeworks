@@ -1,0 +1,25 @@
+<div class="movie-container">
+  <div class="movie-details" *ngIf="isMovieDetailsOn">
+    <h3>Movie: {{ selectedMovie.name }}</h3>
+    <h4>Release Date: {{ selectedMovie.releaseDate | date : "mediumDate" }}</h4>
+    <h4>Producer: {{ selectedMovie.producerName }}</h4>
+    <div>
+      <h4>Genre: {{ selectedMovie.genre }}</h4>
+      <div [ngClass]="selectedMovie.genre | lowercase">genre color</div>
+    </div>
+  </div>
+  <div class="movie-list">
+    <!-- coming from app.component.ts => now import the app-movie.component to render the list as separate items -->
+
+    <!-- then iterate the data and go to movie.component.ts to make the input so the data can be passed from the parent component *ngFor="let movie of movieList" -->
+
+    <!-- coming from movie.component.ts where i defined the Input property [movie] to bind the data from the iteration with the variable singleMovie -->
+
+    <!-- go to movie.component.html to render every single movie -->
+    <app-movie
+      *ngFor="let singleMovie of movieList"
+      [movie]="singleMovie"
+      (movieToPass)="onReciveMovie($event)"
+    ></app-movie>
+  </div>
+</div>

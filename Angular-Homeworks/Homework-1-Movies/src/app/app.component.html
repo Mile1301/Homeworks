@@ -1,0 +1,10 @@
+<header>
+  <h1>Movies Homework</h1>
+  <h2>Total Movies:{{ movieMockData.length }}</h2>
+</header>
+<main>
+  <div class="conatainer">
+    <!-- movieList is the input from movie-list.component property and movieMockData is the exported data from app.component. next, go to movie-list.component.html to make the render using *ngFor -->
+    <app-movie-list [movieList]="movieMockData"></app-movie-list>
+  </div>
+</main>

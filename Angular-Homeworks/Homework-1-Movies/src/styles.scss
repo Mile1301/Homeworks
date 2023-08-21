@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap");
+
+html {
+  font-family: "Nunito", sans-serif;
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+
+.action {
+  background-color: #2ecc71;
+}
+
+.crime {
+  background-color: #f1c40f;
+}
+
+.drama {
+  background-color: #2980b9;
+}
+
+.animation {
+  background-color: #b92984;
+}
+
+.fantasy {
+  background-color: #29b4b9;
+}
+
+.sciencefiction {
+  background-color: #b95729;
+}

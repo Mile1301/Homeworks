@@ -1,0 +1,4 @@
+<div class="movie" [ngClass]="movie.genre | lowercase" (click)="onSendMovie()">
+  <!-- render every single movie passed from the movie.list parent component -->
+  {{ movie.name }}
+</div>

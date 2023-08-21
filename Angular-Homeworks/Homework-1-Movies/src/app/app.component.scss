@@ -1,0 +1,19 @@
+header {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  background-color: aqua;
+  border: 1px solid black;
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3rem;
+    padding-block: 1rem;
+  }
+}
+
+// .container {
+//   display: grid;
+//   grid-template-columns: repeat(4, 1fr);
+//   background-color: bisque;
+// }
